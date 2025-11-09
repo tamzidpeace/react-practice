@@ -2,6 +2,7 @@
 import { WeatherContext } from "./context/WeatherContext";
 import SearchPlace from "./components/SearchPlace";
 import { CurrentWeather } from "./components/CurrentWeather";
+import { UpcomingForecast } from "./components/UpcomingForecast";
 
 function App() {
 
@@ -14,6 +15,8 @@ function App() {
         <SearchPlace />
 
         <CurrentWeather />
+
+        <UpcomingForecast/>
       </div>
     </>
   );
