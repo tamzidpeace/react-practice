@@ -7,6 +7,7 @@ import RootLayout from "./RootLayout.jsx";
 import Courses from "./Courses.jsx";
 import Course from "./Course.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router";
+import { CounterProvider } from "./context/CounterContext.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <CounterProvider>
+      <RouterProvider router={router} />
+    </CounterProvider>
   </StrictMode>
 );
